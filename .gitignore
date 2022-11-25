@@ -1,4 +1,4 @@
-/node_modules
-/Movies-Back
-/backend
-/.angular
+node_modules
+Movies-Back
+backend
+.angular
