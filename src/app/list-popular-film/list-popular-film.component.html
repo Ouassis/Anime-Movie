@@ -1,0 +1,37 @@
+
+<div>
+  <input class="searchbar" placeholder="Rechercher Vos Films Préférés: " [(ngModel)]="searchTitle" (ngModelChange)="searchMovies()">
+</div>
+
+<div class="Title">
+  <h1>Popular Movies:</h1>
+</div>
+<div class ="PopularMoviesList">
+  <div *ngFor ="let film of films;let i = index">
+    <app-film-item [film] = "film" [idx] = "i" (selectedFilm)="showalert($event)"></app-film-item>
+  </div>
+</div>
+<div class="Title">
+  <h1>Upcoming Movies:</h1>
+</div>
+<div class ="UpcomingList">
+  <div *ngFor ="let film of upcoming;let i = index">
+    <app-film-item [film] = "film" [idx] = "i" (selectedFilm)="showalert($event)"></app-film-item>
+  </div>
+</div>
+<div class="Title">
+  <h1>Top Rated Movies:</h1>
+</div>
+<div class ="TopRated">
+  <div *ngFor ="let film of topfilms;let i = index">
+    <app-film-item [film] = "film" [idx] = "i" (selectedFilm)="showalert($event)"></app-film-item>
+  </div>
+</div>
+<div class="Title">
+ <h1>TV Airing Today:</h1>
+</div>
+<div class ="TVAiringList">
+  <div *ngFor ="let tv of tvs;let i = index">
+    <app-film-item [film] = "tv" [idx] = "i" (selectedFilm)="showalert($event)"></app-film-item>
+  </div>
+</div>

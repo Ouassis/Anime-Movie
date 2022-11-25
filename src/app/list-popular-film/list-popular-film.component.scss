@@ -1,0 +1,64 @@
+.PopularMoviesList {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: row;
+  width: 100VW;
+  justify-content: center;
+}
+.UpcomingList {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: row;
+  width: 100VW;
+  justify-content: center;
+}
+.TopRated {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: row;
+  width: 100VW;
+  justify-content: center;
+}
+.TVAiringList {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: row;
+  width: 100VW;
+  justify-content: center;
+}
+.Title{
+  font-family: Algerian;
+  margin-left: 7.5%;
+  color: white;
+}
+
+.searchbar {
+  padding: 10px;
+  width: 1000px;
+  margin-left: 10%;
+  border: solid #c8ccd0 1px;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-transition: box-shadow linear 0.2s;
+  transition: box-shadow linear 0.2s, width 500ms ease;
+  background-color:black;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "Arial Black";
+  color: white;
+  justify-content: center;
+}
+
+.searchbar:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  width: 1080px;
+}
+
+.searchbar:hover {
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  width: 1080px;
+}
+
+
