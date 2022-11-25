@@ -40,6 +40,7 @@ export class ListPopularFilmComponent implements OnInit {
     this.filmservice.searchMovies(this.searchTitle)
       .then((data:any)=>{
         this.films = data.results;
+        console.log(data.results)
       })
   }
 }
